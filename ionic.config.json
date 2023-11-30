@@ -1,0 +1,7 @@
+{
+  "name": "soccer_stats",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
