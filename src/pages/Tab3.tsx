@@ -40,7 +40,6 @@ const Tab3: React.FC = () => {
             <IonCol>Note</IonCol>
           </IonRow>
           
-          {/* Use map to iterate through the data and create rows */}
           {data.map((item, index) => (
             <IonRow key={index}>
               <IonCol>{item._equipeNom}</IonCol>
