@@ -43,80 +43,81 @@ const Tab2: React.FC = () => {
               <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Equipe</IonCol>
               <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Compétition</IonCol>
               <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs pm</IonCol>
-              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tacles pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tacle pm</IonCol>
               <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Interception pm</IonCol>
               <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute pm</IonCol>
               <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Hors-jeux pm</IonCol>
               <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Note</IonCol>
             </IonRow>
 
-            <IonRow className='grid_content'>
-              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Bayern Munich</IonCol>
-              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Bundesliga</IonCol>
-              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.7</IonCol>
-              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>13.3</IonCol>
-              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.7</IonCol>
-              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>9.7</IonCol>
-              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>1.5</IonCol>
-              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.21</IonCol>
+            {data.map((item, index) => (
+            <IonRow className='grid_content' key={index}>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._equipeNom}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._competitionNom}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._tirsPm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._taclePm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._interceptionPm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._fautePm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._horsJeuxPm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._note}</IonCol>
             </IonRow>
+            ))}
           </IonGrid>
         );
       case 'Domicile':
         return (
           <IonGrid>
             <IonRow className='theme'>
-
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Equipe</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Compétition</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tacles pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Interception pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Hors-jeux pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Note</IonCol>
-
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Equipe</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Compétition</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tacle pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Interception pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Hors-jeux pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Note</IonCol>
             </IonRow>
-            <IonRow className='grid_content'>
 
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Bayern Munich</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Bundesliga</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.7</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>13.3</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.7</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>9.7</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>1.5</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.21</IonCol>
-
-            </IonRow>          </IonGrid>
+            {data.map((item, index) => (
+            <IonRow className='grid_content' key={index}>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._equipeNom}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._competitionNom}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._tirsPm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._taclePm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._interceptionPm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._fautePm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._horsJeuxPm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._note}</IonCol>
+            </IonRow>
+            ))}
+          </IonGrid>
         );
       case 'Exterieur':
         return (
           <IonGrid>
             <IonRow className='theme'>
-
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Equipe</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Compétition</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tacles pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Interception pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Hors-jeux pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Note</IonCol>
-
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Equipe</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Compétition</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tacle pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Interception pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Hors-jeux pm</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Note</IonCol>
             </IonRow>
-            <IonRow className='grid_content'>
 
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Bayern Munich</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Bundesliga</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.7</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>13.3</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.7</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>9.7</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>1.5</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.21</IonCol>
-
-            </IonRow>          
+            {data.map((item, index) => (
+            <IonRow className='grid_content' key={index}>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._equipeNom}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._competitionNom}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._tirsPm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._taclePm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._interceptionPm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._fautePm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._horsJeuxPm}</IonCol>
+              <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>{item._note}</IonCol>
+            </IonRow>
+            ))}
           </IonGrid>
         );
       default:
@@ -164,7 +165,7 @@ const Tab2: React.FC = () => {
                 label="Categorie des statistique recherchée"
                 labelPlacement="floating"
                 value={selectedOption}
-                onIonChange={(e) => setSelectedOption(e.detail.value)}
+                onIonChange={(e) => handleSelectChange(e.detail.value)}
               >
                 <IonSelectOption value="General">General</IonSelectOption>
                 <IonSelectOption value="Domicile">Domicile</IonSelectOption>

@@ -57,7 +57,14 @@ const Tab1: React.FC = () => {
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._competitionNom}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._buts}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._tirsPm}</IonCol>
-              <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._cartonJaune} {item._cartonRouge}</IonCol>
+              <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>
+                <span style={{ color: 'black', backgroundColor: 'yellow' }}>
+                  {item._cartonJaune}
+                </span>{' '}
+                <span style={{ color: 'white', backgroundColor: 'red' }}>
+                  {item._cartonRouge}
+                </span>
+              </IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._possession}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._passesReussies}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._aeriensGagnes}</IonCol>
@@ -87,7 +94,14 @@ const Tab1: React.FC = () => {
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._competitionNom}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._buts}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._tirsPm}</IonCol>
-              <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._cartonJaune} {item._cartonRouge}</IonCol>
+              <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>
+                <span style={{ color: 'black', backgroundColor: 'yellow' }}>
+                  {item._cartonJaune}
+                </span>{' '}
+                <span style={{ color: 'white', backgroundColor: 'red' }}>
+                  {item._cartonRouge}
+                </span>
+              </IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._possession}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._passesReussies}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._aeriensGagnes}</IonCol>
@@ -117,7 +131,14 @@ const Tab1: React.FC = () => {
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._competitionNom}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._buts}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._tirsPm}</IonCol>
-              <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._cartonJaune} {item._cartonRouge}</IonCol>
+              <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>
+                <span style={{ color: 'black', backgroundColor: 'yellow' }}>
+                  {item._cartonJaune}
+                </span>{' '}
+                <span style={{ color: 'white', backgroundColor: 'red' }}>
+                  {item._cartonRouge}
+                </span>
+              </IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._possession}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._passesReussies}</IonCol>
               <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>{item._aeriensGagnes}</IonCol>
