@@ -12,16 +12,31 @@ import {   IonPage,
   IonCol,
   IonSearchbar } from '@ionic/react';
 import React,{ useState, useEffect } from 'react';
+import axios from 'axios';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<string>('General');
   const [data, setData] = useState<any[]>([]);
 
+  var url = '';
+
+  switch (selectedOption) {
+    case 'General':
+      url = 'https://soccer.bsite.net/soccer-stats-controller/general/2';
+      break;
+    case 'Domicile':
+      url = 'https://soccer.bsite.net/soccer-stats-controller/general/0';
+      break;
+    case 'Exterieur':
+      url = 'https://soccer.bsite.net/soccer-stats-controller/general/1';
+      break;
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://soccer.bsite.net/soccer-stats-controller/general/2');
+        const response = await axios.get(url);
         console.log(response.data);
         setData(response.data);
       } catch (error) {
