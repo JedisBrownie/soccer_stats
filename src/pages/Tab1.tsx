@@ -11,11 +11,25 @@ import {   IonPage,
   IonRow,
   IonCol,
   IonSearchbar } from '@ionic/react';
-import React,{ useState } from 'react';
+import React,{ useState, useEffect } from 'react';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<string>('General');
+  const [data, setData] = useState<any[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('https://soccer.bsite.net/soccer-stats-controller/general/2');
+        console.log(response.data);
+        setData(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchData();
+  }, []);
 
   const renderGrid = () => {
     switch (selectedOption) {
