@@ -1,22 +1,159 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import {   IonPage,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonContent,
+  IonList,
+  IonItem,
+  IonSelect,
+  IonSelectOption,
+  IonGrid,
+  IonRow,
+  IonCol,
+  IonSearchbar } from '@ionic/react';
+import React,{ useState } from 'react';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
+  const [selectedOption, setSelectedOption] = useState<string>('Generale');
+
+  const renderGrid = () => {
+    switch (selectedOption) {
+      case 'Generale':
+        return (
+          <IonGrid>
+            <IonRow className='theme'>
+
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Equipe</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Compétition</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Buts</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Tirs pm</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Discipline</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Possession%</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>PasseRéussies%</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>AériensGagnés</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Note</IonCol>
+
+            </IonRow>
+            <IonRow className='grid_content'>
+
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Bayern Munich</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Bundesliga</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>43</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>7.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>13.3</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>7.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>9.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>1.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>7.21</IonCol>
+
+            </IonRow>
+          </IonGrid>
+        );
+      case 'Domicile':
+        return (
+          <IonGrid>
+            <IonRow className='theme'>
+
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Equipe</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Compétition</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Buts</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Tirs pm</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Discipline</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Possession%</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>PasseRéussies%</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>AériensGagnés</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Note</IonCol>
+
+            </IonRow>
+            <IonRow className='grid_content'>
+
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Bayern Munich</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Bundesliga</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>43</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>7.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>13.3</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>7.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>9.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>1.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>7.21</IonCol>
+
+            </IonRow>
+          </IonGrid>
+        );
+      case 'Exterieur':
+        return (
+          <IonGrid>
+            <IonRow className='theme'>
+
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Equipe</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Compétition</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Buts</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Tirs pm</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Discipline</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Possession%</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>PasseRéussies%</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>AériensGagnés</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Note</IonCol>
+
+            </IonRow>
+            <IonRow className='grid_content'>
+
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Bayern Munich</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>Bundesliga</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>43</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>7.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>13.3</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>7.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>9.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>1.7</IonCol>
+            <IonCol size='1.333' sizeMd='1.333' sizeLg='1.333' sizeSm='1.333'>7.21</IonCol>
+
+            </IonRow>
+          </IonGrid>
+        );
+      default:
+        return null;
+    }
+  };
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonGrid>
+            <IonRow>
+              <IonCol className='content_title' size="6">
+                <IonTitle>Statistique Générale</IonTitle>
+              </IonCol>
+              <IonCol size="2"></IonCol>
+              <IonCol size="4">
+                <IonSearchbar animated={true} placeholder="research" className='search_bar'></IonSearchbar>
+              </IonCol>
+            </IonRow>
+          </IonGrid>
         </IonToolbar>
       </IonHeader>
+
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
+        <IonHeader>
+          <IonList>
+            <IonItem>
+              <IonSelect
+                label="Categories des statistique rechercher"
+                labelPlacement="floating"
+                value={selectedOption}
+                onIonChange={(e) => setSelectedOption(e.detail.value)}
+              >
+                <IonSelectOption value="Generale">Generale</IonSelectOption>
+                <IonSelectOption value="Domicile">Domicile</IonSelectOption>
+                <IonSelectOption value="Exterieur">Exterieur</IonSelectOption>
+              </IonSelect>
+            </IonItem>
+          </IonList>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+
+        {renderGrid()}
       </IonContent>
     </IonPage>
   );

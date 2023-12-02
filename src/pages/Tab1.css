@@ -1,0 +1,13 @@
+
+
+.theme ion-col {
+    background-color: rgb(127, 176, 54);
+    border: 1px solid #b0ebb0;
+    font-size: smaller;
+    text-align: center;
+  }
+  
+.grid_content ion-col {
+    border: 1px solid #f0f0f0;
+    font-size: 11.5px;
+  }
