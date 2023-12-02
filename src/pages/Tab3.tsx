@@ -28,10 +28,9 @@ const Tab3: React.FC = () => {
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Equipe</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Compétition</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tacles pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Interception pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Hors-jeux pm</IonCol>
+            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs Ca pm</IonCol>
+            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Dribble pm</IonCol>
+            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute subies pm</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Note</IonCol>
 
             </IonRow>
@@ -43,7 +42,6 @@ const Tab3: React.FC = () => {
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>13.3</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.7</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>9.7</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>1.5</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.21</IonCol>
 
             </IonRow>          </IonGrid>
@@ -56,10 +54,9 @@ const Tab3: React.FC = () => {
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Equipe</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Compétition</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tacles pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Interception pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Hors-jeux pm</IonCol>
+            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs Ca pm</IonCol>
+            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Dribble pm</IonCol>
+            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute subies pm</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Note</IonCol>
 
             </IonRow>
@@ -71,7 +68,6 @@ const Tab3: React.FC = () => {
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>13.3</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.7</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>9.7</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>1.5</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.21</IonCol>
 
             </IonRow>          </IonGrid>
@@ -84,10 +80,9 @@ const Tab3: React.FC = () => {
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Equipe</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Compétition</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tacles pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Interception pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute pm</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Hors-jeux pm</IonCol>
+            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Tirs Ca pm</IonCol>
+            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Dribble pm</IonCol>
+            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Faute subies pm</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Note</IonCol>
 
             </IonRow>
@@ -99,7 +94,6 @@ const Tab3: React.FC = () => {
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>13.3</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.7</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>9.7</IonCol>
-            <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>1.5</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>7.21</IonCol>
 
             </IonRow>          </IonGrid>
