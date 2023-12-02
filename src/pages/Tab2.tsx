@@ -15,11 +15,11 @@ import React,{ useState } from 'react';
 import './Tab1.css';
 
 const Tab2: React.FC = () => {
-  const [selectedOption, setSelectedOption] = useState<string>('Domicile');
+  const [selectedOption, setSelectedOption] = useState<string>('General');
 
   const renderGrid = () => {
     switch (selectedOption) {
-      case 'Generale':
+      case 'General':
         return (
           <IonGrid>
           <IonRow className='theme'>
@@ -118,10 +118,6 @@ const Tab2: React.FC = () => {
               <IonCol className='content_title' size="6">
                 <IonTitle>Statistique Générale</IonTitle>
               </IonCol>
-              <IonCol size="2"></IonCol>
-              <IonCol size="4">
-                <IonSearchbar animated={true} placeholder="research" className='search_bar'></IonSearchbar>
-              </IonCol>
             </IonRow>
           </IonGrid>
         </IonToolbar>
@@ -132,12 +128,12 @@ const Tab2: React.FC = () => {
           <IonList>
             <IonItem>
               <IonSelect
-                label="Categories des statistique rechercher"
+                label="Categorie des statistique recherchée"
                 labelPlacement="floating"
                 value={selectedOption}
                 onIonChange={(e) => setSelectedOption(e.detail.value)}
               >
-                <IonSelectOption value="Generale">Generale</IonSelectOption>
+                <IonSelectOption value="General">General</IonSelectOption>
                 <IonSelectOption value="Domicile">Domicile</IonSelectOption>
                 <IonSelectOption value="Exterieur">Exterieur</IonSelectOption>
               </IonSelect>

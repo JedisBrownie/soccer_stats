@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { globeOutline, locate, shield, shieldHalfSharp, square, triangle } from 'ionicons/icons';
+import { airplaneOutline, globeOutline, homeOutline, locate, shield, shieldHalfSharp, shieldOutline, square, triangle, warningOutline } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -57,15 +57,15 @@ const App: React.FC = () => (
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon aria-hidden="true" icon={globeOutline} />
-            <IonLabel>Tab 1</IonLabel>
+            <IonLabel>General</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={shieldHalfSharp} />
-            <IonLabel>Tab 2</IonLabel>
+            <IonIcon aria-hidden="true" icon={shieldOutline} />
+            <IonLabel>Defense</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={locate} />
-            <IonLabel>Tab 3</IonLabel>
+            <IonIcon aria-hidden="true" icon={warningOutline} />
+            <IonLabel>Attaque</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
