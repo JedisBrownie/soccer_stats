@@ -11,19 +11,35 @@ import {   IonPage,
   IonRow,
   IonCol,
   IonSearchbar } from '@ionic/react';
-import React,{ useState } from 'react';
+import React,{ useState, useEffect } from 'react';
+import axios from 'axios';
 import './Tab1.css';
 
 const Tab3: React.FC = () => {
-  
   const [selectedOption, setSelectedOption] = useState<string>('General');
+  const [url, setUrl] = useState<string>('https://soccer.bsite.net/soccer-stats-controller/defense/2');
+  const [data, setData] = useState<any[]>([]);
+
+  const fetchData = async (fetchUrl: string) => {
+    try {
+      const response = await axios.get(fetchUrl);
+      console.log(response.data);
+      setData(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData(url);
+  }, [url]);
 
   const renderGrid = () => {
     switch (selectedOption) {
       case 'General':
         return (
           <IonGrid>
-<IonRow className='theme'>
+          <IonRow className='theme'>
 
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Equipe</IonCol>
             <IonCol size='1.5' sizeMd='1.5' sizeLg='1.5' sizeSm='1.5'>Compétition</IonCol>
@@ -100,6 +116,24 @@ const Tab3: React.FC = () => {
         );
       default:
         return null;
+    }
+  };
+
+  const handleSelectChange = (value: string) => {
+    setSelectedOption(value);
+
+    switch (value) {
+      case 'General':
+        setUrl('https://soccer.bsite.net/soccer-stats-controller/defense/2');
+        break;
+      case 'Domicile':
+        setUrl('https://soccer.bsite.net/soccer-stats-controller/defense/0');
+        break;
+      case 'Exterieur':
+        setUrl('https://soccer.bsite.net/soccer-stats-controller/defense/1');
+        break;
+      default:
+        break;
     }
   };
 
